@@ -1,0 +1,192 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+html {
+  scroll-behavior: auto;
+}
+a {
+  cursor: pointer;
+}
+.header-logo {
+  /* width: 180px; */
+}
+.banner-title {
+  position: relative;
+}
+.ace-responsive-menu-right-menu {
+  width: auto !important;
+}
+.ace-responsive-menu > li > a {
+  text-transform: none !important;
+}
+.footer-widget .info-phone a,
+.footer-widget .info-title a {
+  color: #bebdbd;
+}
+.banner-text {
+  font-size: 20px;
+  color: #ffffff;
+  position: relative;
+}
+.iconbox-style5 {
+  max-width: 100% !important;
+}
+.why-chose-list .list-one .list-icon {
+  line-height: 60px !important;
+}
+.why-chose-list .list-one .list-icon svg {
+  font-size: 30px;
+}
+.iconbox-style5 .icon {
+  line-height: 55px !important;
+}
+.project-cover-image {
+  height: 250px !important;
+}
+.traffic-studies-image {
+  /* height: 250px !important; */
+}
+.traffic-studies-image-container {
+  /* align-items: center;
+  justify-content: center;
+  display: flex; */
+}
+.portal-article {
+  text-align: justify;
+}
+.portal-section {
+  min-height: 650px;
+}
+.contact-icon svg {
+  font-size: 65px;
+}
+.footer-image {
+  height: 150px;
+  filter: opacity(0.8);
+}
+.error-message {
+  background-color: #eb675312;
+  border-radius: 60px;
+  color: #eb6753;
+  font-family: var(--body-font-family);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  padding: 8px 17px;
+  text-align: center;
+}
+.text-red {
+  background-color: #eb675312;
+  border-radius: 60px;
+  color: #eb6753;
+  font-family: var(--body-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  padding: 8px 8px;
+  text-align: center;
+}
+.mobile-swipe,
+.mobile-swipe * {
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+header.nav-homepage-style.sticky .header-logo.logo2 {
+  display: inline-block !important;
+}
+.header.innerpage-style {
+  height: 85px !important;
+  line-height: 85px !important;
+}
+/* .MuiDataGrid-root,
+.MuiTypography-root {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+} */
+/* .tableHeader .MuiDataGrid-columnHeaderTitle {
+  font-weight: 600 !important;
+  color: #464646;
+  font-size: 13px !important;
+} */
+input {
+  /* border: 1px solid #dddddd !important; */
+  /* outline: 0 !important; */
+}
+.MuiDataGrid-root input,
+.MuiInput-input {
+  outline: 0 !important;
+  font-size: 12px !important;
+  border: 0 !important;
+  height: auto !important;
+}
+.MuiDataGrid-columnHeader {
+  outline: 0 !important;
+}
+.MuiTablePagination-selectLabel,
+.MuiTablePagination-displayedRows {
+  margin-bottom: 2px !important;
+}
+.MuiList-root li {
+  font-size: 12px !important;
+}
+.MuiButton-root {
+  color: inherit !important;
+}
+.arrow-with-border {
+  z-index: 11 !important;
+}
+
+/* button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+[type="text"],
+input:where(:not([type])),
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+} */
+.rounded-l-full {
+  border-radius: 50% !important;
+}

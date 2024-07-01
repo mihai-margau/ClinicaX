@@ -1,0 +1,641 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+body {
+  overflow-x: hidden;
+}
+#root {
+  width: 100vw;
+}
+.contentShiftTransition {
+  -webkit-transition: height 0.5s linear;
+  transition: height 0.5s linear;
+}
+/* .scrollGutter-divider {
+  scrollbar-gutter: stable both-edges;
+}
+.scrollGutter-container {
+  scrollbar-gutter: stable both-edges;
+  overflow-y: scroll;
+  overflow-x: hidden;
+} */
+.main-banner-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.main-banner-wrapper .carousel-btn-block {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  z-index: 1;
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper .carousel-btn-block {
+    top: auto;
+    bottom: 60px;
+  }
+}
+
+.main-banner-wrapper .carousel-btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 35px rgba(17, 33, 55, 0.1);
+  -o-box-shadow: 0px 10px 35px rgba(17, 33, 55, 0.1);
+  box-shadow: 0px 10px 35px rgba(17, 33, 55, 0.1);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+.main-banner-wrapper .carousel-btn:hover {
+  background-color: #ffffff;
+  color: #626974;
+  opacity: 1;
+}
+.main-banner-wrapper .carousel-btn.left-btn {
+  position: absolute;
+  left: 160px;
+}
+@media (max-width: 1600px) {
+  .main-banner-wrapper .carousel-btn.left-btn {
+    left: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper .carousel-btn.left-btn {
+    left: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-banner-wrapper .carousel-btn.left-btn {
+    left: 30px;
+  }
+}
+.main-banner-wrapper .carousel-btn.right-btn {
+  left: 160px;
+  position: absolute;
+  right: auto;
+  top: 70px;
+}
+@media (max-width: 1600px) {
+  .main-banner-wrapper .carousel-btn.right-btn {
+    left: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper .carousel-btn.right-btn {
+    top: auto;
+    left: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-banner-wrapper .carousel-btn.right-btn {
+    left: 90px;
+  }
+}
+.main-banner-wrapper.home10_style .carousel-btn.left-btn,
+.main-banner-wrapper.home10_style .carousel-btn.right-btn {
+  left: auto;
+  right: 18%;
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper.home10_style .carousel-btn.right-btn {
+    top: auto;
+    left: auto;
+    right: 13%;
+  }
+}
+@media (max-width: 991.98px) {
+  .main-banner-wrapper.home10_style .carousel-btn.right-btn {
+    right: 10%;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-banner-wrapper.home10_style .carousel-btn.right-btn {
+    right: 8%;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-banner-wrapper.home10_style .carousel-btn.right-btn {
+    right: 5px;
+  }
+}
+
+.banner-style-one.home10_style .slide {
+  height: 700px;
+}
+@media (max-width: 1199.98px) {
+  .banner-style-one.home10_style .slide {
+    height: 600px;
+  }
+}
+.banner-style-one .slide {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 860px;
+}
+@media (max-width: 1199.98px) {
+  .banner-style-one .slide {
+    height: 600px;
+  }
+}
+.banner-style-one .sub-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: var(--title-font-family);
+  line-height: 60px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+@media (max-width: 1199.98px) {
+  .banner-style-one .sub-title {
+    font-size: 48px;
+    line-height: initial;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-style-one .sub-title {
+    font-size: 36px;
+  }
+}
+.banner-style-one .banner-title {
+  color: #ffffff;
+  font-size: 52px;
+  font-family: var(--title-font-family);
+  line-height: 60px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+@media (max-width: 1199.98px) {
+  .banner-style-one .banner-title {
+    font-size: 48px;
+    line-height: initial;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-style-one .banner-title {
+    font-size: 36px;
+  }
+}
+.banner-style-one .banner-text {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+.banner-style-one .banner-btn {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.banner-style-one .banner-content {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+.banner-style-one .active .banner-title,
+.banner-style-one .active .sub-title,
+.banner-style-one .active .banner-text,
+.banner-style-one .active .banner-btn,
+.banner-style-one .active .banner-content {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.banner-wrapper .owl-dot {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  z-index: 991;
+}
+.banner-wrapper .owl-dot span {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 50px;
+  margin: 0 0 15px;
+  opacity: 0.7;
+  width: 50px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.banner-wrapper .owl-dot:last-child {
+  margin-bottom: 0;
+}
+.banner-wrapper .owl-dot.active span {
+  opacity: 1;
+  outline: 2px solid #ffffff;
+  outline-offset: 5px;
+}
+.banner-wrapper .carousel-control-block {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 160px;
+  padding: 15px 20px;
+  position: absolute;
+  right: 20px;
+  width: 100%;
+  z-index: 999;
+}
+.banner-wrapper .carousel-btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-left: 1px solid #dddddd;
+  padding-left: 20px;
+}
+.banner-wrapper .carousel-btn-block span {
+  font-size: 30px;
+  color: var(--headings-color);
+  cursor: pointer;
+  line-height: 0.6em;
+}
+.banner-wrapper .carousel-btn-block span + span {
+  margin-top: 7px;
+}
+.banner-wrapper .slider-number-count {
+  font-weight: 400;
+  color: var(--headings-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner-wrapper .sep {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.banner-wrapper .sep,
+.banner-wrapper .current-number {
+  color: #eb6753;
+  font-weight: 600;
+}
+.main-banner-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.main-banner-wrapper .carousel-btn-block {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  z-index: 1;
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper .carousel-btn-block {
+    top: auto;
+    bottom: 60px;
+  }
+}
+.main-banner-wrapper .carousel-btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 35px rgba(17, 33, 55, 0.1);
+  -o-box-shadow: 0px 10px 35px rgba(17, 33, 55, 0.1);
+  box-shadow: 0px 10px 35px rgba(17, 33, 55, 0.1);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+.main-banner-wrapper .carousel-btn:hover {
+  background-color: #ffffff;
+  color: #626974;
+  opacity: 1;
+}
+.main-banner-wrapper .carousel-btn.left-btn {
+  position: absolute;
+  left: 160px;
+}
+@media (max-width: 1600px) {
+  .main-banner-wrapper .carousel-btn.left-btn {
+    left: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper .carousel-btn.left-btn {
+    left: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-banner-wrapper .carousel-btn.left-btn {
+    left: 30px;
+  }
+}
+.main-banner-wrapper .carousel-btn.right-btn {
+  left: 160px;
+  position: absolute;
+  right: auto;
+  top: 70px;
+}
+@media (max-width: 1600px) {
+  .main-banner-wrapper .carousel-btn.right-btn {
+    left: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .main-banner-wrapper .carousel-btn.right-btn {
+    top: auto;
+    left: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-banner-wrapper .carousel-btn.right-btn {
+    left: 90px;
+  }
+}
+.slider-slide-item {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 900px;
+  position: relative;
+}
+.slider-slide-item:before {
+  background-color: rgba(24, 26, 32, 0.7);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.slider-slide-item.no-overlay:before {
+  background-color: rgba(24, 26, 32, 0);
+}
+@media (max-width: 1199.98px) {
+  .slider-slide-item {
+    height: 500px;
+  }
+}
+a,
+button,
+.btn {
+  color: var(--headings-color);
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+@keyframes wave {
+  /* start point */
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 46%,
+      17% 45%,
+      34% 50%,
+      56% 61%,
+      69% 62%,
+      86% 60%,
+      100% 51%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  /* Mid point */
+  50% {
+    clip-path: polygon(
+      0% 59%,
+      16% 64%,
+      33% 65%,
+      52% 61%,
+      70% 52%,
+      85% 47%,
+      100% 48%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+/* ********************* Image Waves ************************ */
+.waveDiv {
+  position: absolute;
+  overflow: hidden;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wave-content-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #00607a 30%, #002b36 90%);
+}
+.first-wave {
+  z-index: 3;
+  opacity: 0.5;
+}
+.second-wave {
+  z-index: 2;
+  opacity: 0.75;
+}
+.third-wave {
+  z-index: 1;
+}
+.wave-image {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.first-image {
+  background-size: 50% 100px;
+}
+.animation-wave .first-image {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.second-image {
+  background-size: 50% 120px;
+}
+.animation-wave .second-image {
+  animation: waves 10s linear infinite;
+}
+.third-image {
+  background-size: 50% 140px;
+}
+.animation-wave .third-image {
+  animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) scaleY(1);
+  }
+}
+.b-position {
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.captcha canvas {
+  margin: 0 auto;
+}
+.text-red {
+  background-color: #eb675312;
+  border-radius: 60px;
+  color: #eb6753;
+  font-family: var(--body-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  padding: 8px;
+  text-align: center;
+}
+.MuiDataGrid-root,
+.MuiTypography-root {
+  /* font-family: "Inter var" !important; */
+}
+.MuiDataGrid-root > *,
+.MuiTypography-root > * {
+  /* font-family: "Inter var" !important; */
+}
+.tableHeader .MuiDataGrid-columnHeaderTitle {
+  @apply font-semibold text-xs;
+  @apply text-gray-600 !important;
+}
+.MuiDataGrid-toolbarContainer .MuiButton-root.MuiButton-text {
+  @apply font-semibold text-sm;
+  @apply text-gray-600 !important;
+  /* font-family: "Inter var" !important; */
+}
+.MuiList-root .MuiTypography-root,
+.MuiDataGrid-cell {
+  @apply text-xs font-medium;
+}
+.MuiSvgIcon-root {
+  @apply text-gray-500;
+}
+.MuiDataGrid-columnHeaders {
+  @apply border-t border-gray-900/5 bg-gray-100 !important;
+}
+.MuiDataGrid-toolbarContainer {
+  @apply pb-4 !important;
+  @apply pt-2 !important;
+}
+.MuiDataGrid-columnHeader,
+.MuiDataGrid-topContainer,
+.MuiDataGrid-scrollbarFiller {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  overlay: auto;
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500;
+  /* border: 2px solid #555555; */
+}
+.MuiDataGrid-root *::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.MuiDataGrid-root *::-webkit-scrollbar {
+  width: 5px;
+  @apply bg-gray-800;
+}
